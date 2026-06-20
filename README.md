@@ -22,7 +22,7 @@ Open `QwensTtsBuddy.sln` in Visual Studio and build `Release | x64`, or run `BUI
 
 The app defaults to the local setup created earlier:
 
-`C:\Users\flyin\OneDrive\Desktop\qwen tts`
+`C:\Users\Owner\Desktop\qwen tts`
 
 It expects:
 
@@ -41,7 +41,7 @@ powershell -ExecutionPolicy Bypass -File .\INSTALL_TO_QWEN_TTS_FOLDER.ps1
 
 It installs into:
 
-`C:\Users\flyin\OneDrive\Desktop\qwen tts\QwensTtsBuddy`
+`C:\Users\Owner\Desktop\qwen tts\QwensTtsBuddy`
 
 The script does not remove models, embedded Python, generated audio, or other Qwen files.
 
@@ -49,7 +49,7 @@ The script does not remove models, embedded Python, generated audio, or other Qw
 
 - Studio-style native UI with dark/light theme toggle
 - Generate, Voice Library, Voice Clone, Fine Tune, Models, and Settings pages
-- SQLite-backed local voice library at `C:\Users\flyin\OneDrive\Desktop\qwen tts\qwen_studio_data\qwen_studio.sqlite`
+- SQLite-backed local voice library at `C:\Users\Owner\Desktop\qwen tts\qwen_studio_data\qwen_studio.sqlite`
 - Reusable voice profiles for built-in voices, cloned voices, VoiceDesign prompts, and fine-tuned checkpoints
 - Generate page is profile-first: one selected `Saved Profile` controls speaker, language, model mode, default voice emotion, and default audio processing
 - Voice sample manager with audio/transcript validation and duration/sample-rate capture
