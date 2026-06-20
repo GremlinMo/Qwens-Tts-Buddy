@@ -1,6 +1,10 @@
 # Qwens Tts Buddy
 
-Native Windows desktop UI for your offline Qwen3-TTS setup.
+Qwens Tts Buddy is a native Windows desktop app for running Qwen3-TTS locally, offline, and with a studio-style workflow instead of a browser interface. It is built for creators, developers, and voice hobbyists who want to type text, choose a saved voice, shape the delivery, and export finished audio without sending anything to the cloud.
+The app centers on three clear choices: a Voice Profile, a Voice Emotion, and optional Audio Processing. Voice Profiles manage built-in Qwen speakers, cloned voices, designed voices, and fine-tuned checkpoint voices. Voice Emotion controls acting style, such as natural, calm, angry, scared, whispering, excited, sad, urgent, funny, creepy, or unhinged. Audio Processing is separate and only changes the rendered sound, with options like clean narration, radio, telephone, echo chamber, reverb, deepening, brightening, robotic tone, chorus/flanger, low-pass, and high-pass filtering.
+Qwens Tts Buddy includes playback controls, safe file saving, automatic versioned filenames, and export support for WAV, MP3, OGG, and FLAC. Long text can be split into chunks and joined smoothly with crossfade, while speed and generation variation remain separate so users understand what each setting does. The app stores a local voice library and generation history in SQLite, making it easy to reuse voices, inspect recent outputs, open output folders, or create processed versions of existing generations.
+The model manager scans the local Qwen models folder and clearly shows which models are installed, missing, or partially present, plus what each model is used for. It supports stronger instruction models for emotion control, VoiceDesign models for character-style prompting, and Base models for cloning and fine-tuning.
+For voice cloning and fine-tuning, the app provides guided validation instead of confusing Python crashes. Fine-tune projects can import WAV, MP3, OGG, and FLAC, then normalize non-WAV files into project WAVs before training. Everything is designed to stay offline-first, practical, organized, and shareable as a clean GitHub C++ package for local Qwen TTS work. Because it is a native Win32 application, it launches quickly, avoids web wrappers, and fits neatly beside an existing embedded Python/Qwen setup, making it a lightweight companion for everyday speech generation and voice experimentation at home.
 
 ## Build
 
@@ -29,7 +33,7 @@ powershell -ExecutionPolicy Bypass -File .\INSTALL_TO_QWEN_TTS_FOLDER.ps1
 
 It installs into:
 
-`C:\Users\flyin\OneDrive\Desktop\qwen tts\QwensTtsBuddy`
+`C:\Users\Owner\Desktop\Qwen tts\QwensTtsBuddy`
 
 The script does not remove models, embedded Python, generated audio, or other Qwen files.
 
@@ -70,4 +74,4 @@ The script does not remove models, embedded Python, generated audio, or other Qw
 
 ## Note
 
-Qt 6 was not available on this machine, so this build uses a custom native C++ Windows UI that can be compiled immediately with the installed Visual Studio toolchain. The Python job interface is JSON-based so a Qt shell can be added later without changing the Qwen backend workflow.
+Qt 6 was not available on our machine, so this build uses a custom native C++ Windows UI that can be compiled immediately with the installed Visual Studio toolchain. The Python job interface is JSON-based so a Qt shell can be added later without changing the Qwen backend workflow.
