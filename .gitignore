@@ -1,0 +1,24 @@
+# Visual Studio build output
+.vs/
+x64/
+Debug/
+Release/
+QwensTtsBuddy/
+*.obj
+*.pdb
+*.ipdb
+*.iobj
+*.ilk
+*.lib
+*.tlog
+*.log
+
+# Local/generated app data
+qwen_studio_data/
+voice_projects/
+output_qwen_studio*
+*.wav
+*.mp3
+*.ogg
+*.flac
+
